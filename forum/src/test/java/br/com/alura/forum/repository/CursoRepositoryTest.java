@@ -29,10 +29,10 @@ public class CursoRepositoryTest {
 	public void deveriaCarregarUmCursoAoBuscarPeloSeuNome() {
 		String nomeCurso = "HTML 5";
 		
-//		Curso html5 = new Curso();
-//		html5.setNome(nomeCurso);
-//		html5.setCategoria("Programacao");
-//		em.persist(html5);
+		Curso html5 = new Curso();
+		html5.setNome(nomeCurso);
+		html5.setCategoria("Programacao");
+		em.persist(html5);
 		
 		Curso curso = repository.findByNome(nomeCurso);
 		assertNotNull(curso);
